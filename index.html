@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFR2GFKT75"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-RFR2GFKT75');
+  </script> -->
+  <!-- Google Tag Manager -->
+  <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  })(window,document,'script','dataLayer','GTM-NC38VTD');</script> -->
+  <!-- End Google Tag Manager -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta http-equiv="refresh" content="0; URL=https://cs.stanford.edu/~leoyuan/"> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+	<!-- <meta name="google-site-verification" content="u_--0s_Uw50r4zCgRrzltkmFhNCduYOJwPGlKVTuNJU" /> -->
+
+  <title>Wenxin Chen | 陈雯欣</title>
+  <meta name="description" lang="en" content="This is an academic website for Wenxin Chen">
+  <meta name="keywords" lang="en" content="Wenxin Chen, 陈雯欣, 家庭社会学, 性别研究" />
+  
+
+  <link rel="shortcut icon" href="images/J.jpeg">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/academicons.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+  <script src="js/jquery-2.1.3.min.js"> </script>
+
+  <!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+</script>
+<![endif]-->
+
+  <script type="text/javascript">
+    function ShowHide(divId, linkDivId) {
+        if(document.getElementById(divId).style.display == 'none') {
+            document.getElementById(divId).style.display='block';
+            document.getElementById(linkDivId).style.display='none'; // Hide the "read more" link
+        }
+        else {
+            document.getElementById(divId).style.display = 'none';
+        }
+    }
+  </script>
+
+  <style>
+    /* 为所有列表项设置样式 */
+    li.indented {
+        position: relative;
+        padding-left: 90px; /* 这是对齐效果的关键，可以根据实际内容调整这个值 */
+    }
+
+    li.indented::before {
+        content: attr(data-date);
+        position: absolute;
+        left: 0;
+        top: 0;
+        white-space: nowrap;
+    }
+  </style>
+  
+
+  
+
+<style>
+#lang-toggle {
+  transition: color 0.2s ease;
+}
+#lang-toggle:hover {
+  color: #111;
+}
+</style>
+
+<style>
+/* Photography Section Styles */
+.photo-filters {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.filter-btn {
+  background: #f5f5f5;
+  border: 2px solid #ddd;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #555;
+}
+
+.filter-btn:hover {
+  background: #e0e0e0;
+  border-color: #999;
+}
+
+.filter-btn.active {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+/* Photo Grid Layout */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  aspect-ratio: 4/3;
+}
+
+.photo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.photo-item:hover img {
+  transform: scale(1.1);
+}
+
+.photo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.photo-item:hover .photo-overlay {
+  transform: translateY(0);
+}
+
+.photo-overlay h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.photo-overlay p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.95);
+  overflow: auto;
+}
+
+.lightbox-content {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  max-width: 1200px;
+  width: 90%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox-content img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+  transition: color 0.3s;
+}
+
+.lightbox-close:hover {
+  color: #bbb;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 20px;
+  user-select: none;
+  transition: color 0.3s;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  color: #bbb;
+}
+
+.lightbox-prev {
+  left: 20px;
+}
+
+.lightbox-next {
+  right: 20px;
+}
+
+.lightbox-caption {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.lightbox-caption h3 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.lightbox-caption p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .filter-btn {
+    padding: 8px 15px;
+    font-size: 13px;
+    margin: 3px;
+  }
+  
+  .lightbox-prev,
+  .lightbox-next {
+    font-size: 30px;
+    padding: 10px;
+  }
+  
+  .lightbox-close {
+    font-size: 30px;
+    right: 20px;
+  }
+}
+
+/* Hide/Show Animation */
+.photo-item.hide {
+  display: none;
+}
+
+.photo-item.show {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+</style>
+</head>
+
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC38VTD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+<!-- End Google Tag Manager (noscript) -->
+
+    <header class="site-header">
+
+  <div class="wrapper">
+<nav class="site-nav">
+  <a href="#" class="menu-icon">
+    <svg viewBox="0 0 18 15">
+      <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+      <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+      <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+    </svg>
+  </a>
+
+  <div class="trigger">
+    <a class="page-link" href="#bio"><b><span class="lang-zh" style="display:none;">关于我</span><span class="lang-en">About</span></b></a>
+    <a class="page-link" href="#timeline"><b><span class="lang-zh" style="display:none;">经历</span><span class="lang-en">Experience</span></b></a>
+    <a class="page-link" href="#research-projects"><b><span class="lang-zh" style="display:none;">研究项目</span><span class="lang-en">Research</span></b></a>
+    <a class="page-link" href="#publications"><b><span class="lang-zh" style="display:none;">论文</span><span class="lang-en">Publications</span></b></a>
+    <a class="page-link" href="#awards"><b><span class="lang-zh" style="display:none;">荣誉</span><span class="lang-en">Honors</span></b></a>
+    <a class="page-link" href="#photography"><b><span class="lang-zh" style="display:none;">摄影</span><span class="lang-en">Photography</span></b></a>
+    <a class="page-link" href="javascript:void(0)" id="lang-toggle" style="cursor:pointer;"><b>中文</b></a>
+  </div>
+</nav>
+  </div>
+</header>
+
+
+
+
+  <div id="profile-cover" class="cover shallow-bg img-responsive"> 
+    <div id="profile-namecard" class="profile-wrapper wrapper-light">
+      <div id="my-pic" class="profile-col profile-col-1">
+        <img id="profile-avatar" src="images/myself.jpg" alt="Me" class="circle-img border-dark"-/>
+      </div>
+      <div id="my-contact" class="profile-col profile-col-2">
+        <div id="my-name" class="text-grey-dark">
+          <span class="lang-zh" style="display:none;">陈雯欣</span><span class="lang-en">Wenxin Chen</span><br>
+        </div>
+        <div id="my-title" class="text-grey">
+          <span class="lang-zh" style="display:none;">上海大学 硕士研究生</span><span class="lang-en">Master's Student, Shanghai University</span>
+        </div>
+        <div id="my-email" class="text-grey-light">
+          wenxinchen.soc@gmail.com
+        </div>
+
+	</div>
+        <div class="social-media">
+          <a href="mailto:wenxinchen.soc@gmail.com" target="_blank" class="icon-button linkedin">
+            <i class="fa fa-envelope icon-linkedin"></i>
+            <span></span>
+          </a>
+
+          <a href="https://github.com/wenxinchen-soc" target="_blank" class="icon-button github">
+            <i class="fa fa-github icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="#" target="_blank" class="icon-button xiaohongshu" aria-label="小红书">
+            <i><img src="https://cdn.simpleicons.org/xiaohongshu/FF2D55" alt="小红书" width="28" height="28" style="vertical-align:middle;"></i>
+            <span></span>
+          </a>
+
+          <a href="#" target="_blank" class="icon-button linkedin">
+            <i class="ai ai-google-scholar-square icon-linkedin"></i>
+            <span></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- <div id="my-desc" class="profile-col profile-col-2 hide">
+        <div id="my-desc-title">
+          Another me.
+        </div>
+        <div id="my-desc-content">
+          I enjoy running, traveling, hiking, movies, music and so much more<br>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  <!-- <script type="text/javascript">
+    function deepFeature()
+    {
+      $('#profile-avatar').attr('src', 'images/self-portrait/deep-me.jpg');
+      $('#profile-avatar').removeClass('border-dark');
+      $('#profile-avatar').addClass('border-bright');
+
+      $('#profile-cover').removeClass('shallow-bg');
+      $('#profile-cover').addClass('deep-bg');
+      
+      $('#profile-namecard').removeClass('wrapper-light');
+      $('#profile-namecard').addClass('wrapper-dark');
+      
+      $('#my-desc').removeClass('hide');
+      $('#my-contact').addClass('hide');    
+      // console.log('Move in now...');
+    }
+
+    function shallowFeature()
+    {
+      $('#profile-avatar').attr('src', 'images/self-portrait/me.jpg');
+      $('#profile-avatar').removeClass('border-bright');
+      $('#profile-avatar').addClass('border-dark');
+
+      $('#profile-cover').removeClass('deep-bg');
+      $('#profile-cover').addClass('shallow-bg');
+      
+      $('#profile-namecard').removeClass('wrapper-dark');
+      $('#profile-namecard').addClass('wrapper-light');
+      
+      $('#my-contact').removeClass('hide');
+      $('#my-desc').addClass('hide');
+      // console.log('Move out now...');
+    }
+
+    $(function() { 
+      $('#my-pic').hover(deepFeature, shallowFeature);
+    })
+
+  </script> -->
+
+<div class="page-content">
+<div class="wrapper">
+<div id="bio" class="bio">
+
+  <h1 class="md-heading text-left">
+    <i class="fa fa-id-card" aria-hidden="true"></i>
+    <span class="lang-zh" style="display:none;">关于我</span><span class="lang-en">About Me</span>
+  </h1>
+  <div class="bio-body" style="overflow:hidden;">
+    <p>
+      <span class="lang-zh" style="display:none;">我是<a href="https://www.shu.edu.cn/" target="_blank">上海大学</a>的硕士研究生，研究方向为<b>家庭社会学</b>和<b>性别研究</b>。
+ 
+如果您对我的研究感兴趣，欢迎通过<a href="mailto:wenxinchen.soc@gmail.com" target="_blank">邮件</a>与我联系。</span><span class="lang-en">I am a Master's student at <a href="https://www.shu.edu.cn/" target="_blank">Shanghai University</a>, focusing on <b>Family Sociology</b> and <b>Gender Studies</b>.
+ 
+If you are interested in my research, please feel free to contact me via <a href="mailto:wenxinchen.soc@gmail.com" target="_blank">email</a>.</span>
+
+      <br>
+    </p>
+
+    <div style="width: 50%; float:left">
+<h3>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <strong><span class="lang-zh" style="display:none;">研究方向</span><span class="lang-en">Research Interests</span></strong>
+</h3>
+      <ul>
+        <li><b><span class="lang-zh" style="display:none;">家庭社会学</span><span class="lang-en">Family Sociology</span></b></li>
+        <li><b><span class="lang-zh" style="display:none;">性别研究</span><span class="lang-en">Gender Studies</span></b></li>
+      </ul>
+    </div>
+
+    <div style="width: 50%; float:right">
+<h3>
+<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+<strong><span class="lang-zh" style="display:none;">教育背景</span><span class="lang-en">Education</span></strong>
+</h3>
+<b><span class="lang-zh" style="display:none;">上海大学</span><span class="lang-en">Shanghai University</span></b><br>
+<ul>
+        <li><span class="lang-zh" style="display:none;">硕士，金融学</span><span class="lang-en">Master's Degree in Finance</span></li>
+      </ul>
+      <b><span class="lang-zh" style="display:none;">浙江工商大学杭州商学院</span><span class="lang-en">Hangzhou College of Commerce, Zhejiang Gongshang University</span></b><br>
+      <ul>
+        <li><span class="lang-zh" style="display:none;">本科，金融学</span><span class="lang-en">Bachelor's Degree in Finance</span></li>
+      </ul>
+    </div>
+  
+  </div>
+</div>
+
+<!-- <div id="news" class="bio">
+  <h1 class="md-heading text-left">
+    <i class="fa fa-tasks" aria-hidden="true"></i>
+    News
+  </h1>  
+  <ul>
+    	<li class="indented" data-date="[Feb, 2024]"> Give a talk on <a href="https://arxiv.org/pdf/2402.03675.pdf">protein-protein interaction prediction</a> to <a href="https://jian-tang.com/students/">Jian Tang's group</a>. [<a href="files/ppiretrieval.pdf">Slide</a>]</li>
+	<li class="indented" data-date="[Dec, 2023]"> Give a talk on <a href="https://arxiv.org/pdf/2304.14621.pdf">structure-based molecule design</a> at LoG2023 Montreal. [<a href="files/mudiff.pdf">Slide</a>][<a href="https://www.youtube.com/watch?v=Z5l-gaV-DUo">Video</a>]</li>
+    	<li class="indented" data-date="[Nov, 2023]"> One paper accepted to 2nd Learning on Graphs Conference.</li>
+    	<li class="indented" data-date="[Oct, 2023]"> One paper accepted to 37th Conference on Neural Information Processing Systems.</li>
+    	<li class="indented" data-date="[Sep, 2023]"> One paper accepted to 12th International Conference on Complex Networks and their Applications.</li>
+   	<li class="indented" data-date="[Oct, 2022]"> One paper accepted to 36th Conference on Neural Information Processing Systems, GLFrontiers, and selected for <b><span style="color: red;">Oral</span></b> presentation.</li>
+   	<li class="indented" data-date="[Oct, 2022]"> Two papers accepted to 36th Conference on Neural Information Processing Systems, and one paper selected for <b><span style="color: red;">Spotlight</span></b> presentation.</li>
+  </ul>
+</div> -->
+
+<!-- <div class="wrapper"> -->
+  <div id="timeline" class="timeline-brief">
+    <h1 class="md-heading text-left">
+      <i class="fa fa-tasks" aria-hidden="true"></i>
+      <span class="lang-zh" style="display:none;">经历</span><span class="lang-en">Experience</span>
+    </h1>
+  
+    <div class="timeline-body">
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <img class="social-icon" src="images/yicai.png"/>
+          <span class="lang-zh" style="display:none;">2024.7 - 2024.11</span><span class="lang-en">Jul 2024 - Nov 2024</span>
+        </div>
+        <div class="timeline-title">
+          <span class="lang-zh" style="display:none;">实习 @ 上海财联社金融科技有限公司</span><span class="lang-en">Intern @ Yicai Financial Technology Co., Ltd.</span>
+        </div>
+        <div class="timeline-desc">
+          <div class="timeline-host">
+          </div>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <img class="social-icon" src="images/sinolink.jpg"/>
+          <span class="lang-zh" style="display:none;">2024.7 - 2024.8</span><span class="lang-en">Jul 2024 - Aug 2024</span>
+        </div>
+        <div class="timeline-title">
+          <span class="lang-zh" style="display:none;">实习 @ 国金证券（上海总部）</span><span class="lang-en">Intern @ Sinolink Securities (Shanghai Headquarters)</span>
+        </div>
+        <div class="timeline-desc">
+          <div class="timeline-host">
+          </div>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <img class="social-icon" src="images/ctbc.jpg"/>
+          <span class="lang-zh" style="display:none;">2020 - 2021</span><span class="lang-en">2020 - 2021</span>
+        </div>
+        <div class="timeline-title">
+          <span class="lang-zh" style="display:none;">工作 @ 中国信托商业银行厦门分行</span><span class="lang-en">Employee @ CTBC Bank Xiamen Branch</span>
+        </div>
+        <div class="timeline-desc">
+          <div class="timeline-host">
+          </div>
+        </div>
+      </div>
+  
+      
+      
+  
+      
+      
+  
+      
+      
+  
+        
+  
+          
+      
+          
+  
+    <br>
+  </div>
+  </div>
+
+
+<div class="wrapper">
+  <div id="research-projects" class="bio">
+    <h1 class="md-heading text-left">
+      <i class="fa fa-flask" aria-hidden="true"></i>
+      <span class="lang-zh" style="display:none;">研究项目</span><span class="lang-en">Research Projects</span>
+    </h1>
+    <div class="timeline-body">
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <span class="lang-zh" style="display:none;">2025.3 - 2025.8</span><span class="lang-en">Mar 2025 - Aug 2025</span>
+        </div>
+        <div class="timeline-title">
+          <span class="lang-zh" style="display:none;">静安区残疾人事业"十五五"规划</span><span class="lang-en">Jing'an District Disability Services "15th Five-Year Plan"</span>
+        </div>
+        <div class="timeline-desc">
+          <b><span class="lang-zh" style="display:none;">课题组主管</span><span class="lang-en">Project Manager</span></b>
+          <div class="timeline-host">
+            <span class="lang-zh" style="display:none;">上海市重点社会政策研究课题</span><span class="lang-en">Shanghai Key Social Policy Research Project</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <span class="lang-zh" style="display:none;">2024.9 - 2025.4</span><span class="lang-en">Sep 2024 - Apr 2025</span>
+        </div>
+        <div class="timeline-title">
+          <span class="lang-zh" style="display:none;">上海市残疾人康复服务"十四五"中期评估</span><span class="lang-en">Mid-term Evaluation of Shanghai Disability Rehabilitation Services "14th Five-Year Plan"</span>
+        </div>
+        <div class="timeline-desc">
+          <b><span class="lang-zh" style="display:none;">课题资料组组长</span><span class="lang-en">Data Team Leader</span></b>
+          <div class="timeline-host">
+            <span class="lang-zh" style="display:none;">省部级社会政策研究课题</span><span class="lang-en">Provincial-level Social Policy Research Project</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <span class="lang-zh" style="display:none;">2024.9 - 2025.4</span><span class="lang-en">Sep 2024 - Apr 2025</span>
+        </div>
+        <div class="timeline-title">
+          <span class="lang-zh" style="display:none;">上海市残疾预防行动计划（2023-2025年）第三方中期评估</span><span class="lang-en">Third-party Mid-term Evaluation of Shanghai Disability Prevention Action Plan (2023-2025)</span>
+        </div>
+        <div class="timeline-desc">
+          <b><span class="lang-zh" style="display:none;">分析小组负责人</span><span class="lang-en">Analysis Team Leader</span></b>
+          <div class="timeline-host">
+            <span class="lang-zh" style="display:none;">省部级社会政策研究课题</span><span class="lang-en">Provincial-level Social Policy Research Project</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="publications" class="publications">
+  <h1 class="md-heading text-left">
+    <i class="fa fa-file" aria-hidden="true"></i>
+    <span class="lang-zh" style="display:none;">论文发表</span><span class="lang-en">Publications</span>
+  </h1>
+
+
+
+  <div class="pub-list">
+        <p style="text-align: center; color: #666; padding: 40px;"><span class="lang-zh" style="display:none;">暂无论文发表</span><span class="lang-en">No publications yet</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    
+
+  </div>
+</div>
+</div>
+	
+<!-- JavaScript to handle button clicks -->
+<script>
+  // Get the buttons and publications
+  const showSelectedBtn = document.getElementById('show-selected-btn');
+  const showAllBtn = document.getElementById('show-all-btn');
+  const publications = document.querySelectorAll('.pub');
+
+  // Add event listener to 'Show Selected Publication' button
+  showSelectedBtn.addEventListener('click', function() {
+    publications.forEach(pub => {
+      if (pub.getAttribute('data-selected') === 'true') {
+        pub.style.display = 'block';  // Show selected publication
+      } else {
+        pub.style.display = 'none';  // Hide other publications
+      }
+    });
+  });
+
+  // Add event listener to 'Show All' button
+  showAllBtn.addEventListener('click', function() {
+    publications.forEach(pub => {
+      pub.style.display = 'block';  // Show all publications
+    });
+  });
+</script>
+
+<script>
+  const repos = [
+    { owner: "alibaba-damo-academy", repo: "WorldVLA", starId: "star-count", forkId: "fork-count" },
+    { owner: "GAI4Manipulation", repo: "AwesomeGAIManipulation", starId: "star-count-2", forkId: "fork-count-2" },
+    { owner: "Jun-CEN", repo: "CMDFusion", starId: "star-count-3", forkId: "fork-count-3" },
+    { owner: "Jun-CEN", repo: "SegmentAnyRGBD", starId: "star-count-4", forkId: "fork-count-4" },
+    { owner: "Jun-CEN", repo: "PSL", starId: "star-count-5", forkId: "fork-count-5" },
+    { owner: "Jun-CEN", repo: "Unified-Open-Set-Recognition", starId: "star-count-6", forkId: "fork-count-6" },
+    { owner: "Jun-CEN", repo: "Open-world-3D-semantic-segmentation", starId: "star-count-7", forkId: "fork-count-7" },
+    { owner: "Jun-CEN", repo: "Open-World-Semantic-Segmentation", starId: "star-count-8", forkId: "fork-count-8" },
+    { owner: "Jingkang50", repo: "PSG4D", starId: "star-count-9", forkId: "fork-count-9" },
+    { owner: "youquanl", repo: "Segment-Any-Point-Cloud", starId: "star-count-10", forkId: "fork-count-10" }
+  ];
+
+  async function loadGitHubStats() {
+    for (const { owner, repo, starId, forkId } of repos) {
+      try {
+        const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`);
+        if (!res.ok) throw new Error("GitHub API error");
+        const data = await res.json();
+        document.getElementById(starId).innerText = data.stargazers_count ?? "–";
+        document.getElementById(forkId).innerText = data.forks_count ?? "–";
+      } catch (e) {
+        console.error(`Failed to load stats for ${owner}/${repo}`, e);
+        document.getElementById(starId).innerText = "–";
+        document.getElementById(forkId).innerText = "–";
+      }
+    }
+  }
+
+  loadGitHubStats();
+</script>
+
+
+
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div id="awards" class="bio">
+    <h1 class="md-heading text-left">
+      <i class="fa fa-tasks" aria-hidden="true"></i>
+      <span class="lang-zh" style="display:none;">荣誉奖项</span><span class="lang-en">Honors & Awards</span>
+    </h1>
+    <ul>
+  	
+	
+	
+	
+	
+    <li><span class="lang-zh" style="display:none;">暂无</span><span class="lang-en">None</span></li>
+    </ul>
+  </div>
+</div>
+
+<style>
+  .reviewer-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+
+  .reviewer-column {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    padding-right: 20px;
+    font-size: 0.85em; /* 字体略微变小 */
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1em;
+    margin-bottom: 4px;
+  }
+
+  .reviewer-column::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #555;
+  }
+
+  @media (max-width: 600px) {
+    .reviewer-column {
+      flex: 1 1 100%;
+    }
+  }
+
+  .reviewer-title {
+    margin-top: 12px;
+    font-weight: bold;
+  }
+</style>
+
+
+  </div>
+</div>
+
+<!-- Photography Section -->
+<div class="wrapper">
+  <div id="photography" class="bio">
+    <h1 class="md-heading text-left">
+      <i class="fa fa-camera" aria-hidden="true"></i>
+      <span class="lang-zh" style="display:none;">摄影作品 - 星空</span><span class="lang-en">Photography - Starry Sky</span>
+    </h1>
+
+    <!-- Photo Grid -->
+    <div class="photo-grid" id="photoGrid">
+      <!-- Photos will be dynamically loaded here -->
+    </div>
+  </div>
+</div>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <span class="lightbox-prev">&#10094;</span>
+  <span class="lightbox-next">&#10095;</span>
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-caption">
+      <h3 id="lightbox-title"></h3>
+      <p id="lightbox-info"></p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li><span class="lang-zh" style="display:none;">个人邮箱:</span><span class="lang-en">Personal Email:</span></li>
+          <li><a href="mailto:">wenxinchen.soc@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+          <a href="mailto:wenxinchen.soc@gmail.com" target="_blank" class="icon-button linkedin">
+            <i class="fa fa-envelope icon-linkedin"></i>
+            <span></span>
+          </a>
+      </div>
+	<div class="footer-col footer-col-3">
+    	<!--<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fwillhua127.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a> -->
+	<!-- <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?user=Lxe71v4AAAAJ&hl=en&url=https%3A%2F%2Fscholar.google.com%2Fcitations&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a> -->
+		<p class="text"><span class="lang-zh" style="display:none;">最后更新: 2025年12月</span><span class="lang-en">Last updated: Dec, 2025</span>.<br></p>
+	</div>
+  </div>
+  </div>
+
+</footer>
+    <div class="back-to-top">Top</div>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+    
+        }
+    });
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
+</script>
+  
+<script>
+// 语言切换功能
+document.addEventListener('DOMContentLoaded', function() {
+  const langToggle = document.getElementById('lang-toggle');
+  let currentLang = 'zh'; // 默认中文
+  
+  // 从 localStorage 读取用户偏好
+  const savedLang = localStorage.getItem('preferredLang');
+  if (savedLang) {
+    currentLang = savedLang;
+    if (currentLang === 'en') {
+      switchToEnglish();
+    }
+  }
+  
+  langToggle.addEventListener('click', function() {
+    if (currentLang === 'zh') {
+      switchToEnglish();
+      currentLang = 'en';
+      langToggle.innerHTML = '<b>中文</b>';
+    } else {
+      switchToChinese();
+      currentLang = 'zh';
+      langToggle.innerHTML = '<b>EN</b>';
+    }
+    // 保存用户偏好
+    localStorage.setItem('preferredLang', currentLang);
+  });
+  
+  function switchToEnglish() {
+    document.querySelectorAll('.lang-zh').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'inline');
+    langToggle.innerHTML = '<b>中文</b>';
+  }
+  
+  function switchToChinese() {
+    document.querySelectorAll('.lang-zh').forEach(el => el.style.display = 'inline');
+    document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'none');
+    langToggle.innerHTML = '<b>EN</b>';
+  }
+});
+</script>
+
+<script>
+// Photography Gallery JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+  
+  // Photo data - 星空主题照片
+  const photos = [
+    {
+      src: 'images/photography/starry-sky/starry1.jpg',
+      category: 'starry-sky',
+      title: { zh: '星空之夜', en: 'Starry Night' },
+      location: { zh: '拍摄地点', en: 'Location' },
+      date: '2026'
+    },
+    {
+      src: 'images/photography/starry-sky/starry2.jpg',
+      category: 'starry-sky',
+      title: { zh: '璀璨星河', en: 'Brilliant Starry Sky' },
+      location: { zh: '拍摄地点', en: 'Location' },
+      date: '2026'
+    }
+  ];
+
+  let currentPhotoIndex = 0;
+  const photoGrid = document.getElementById('photoGrid');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxTitle = document.getElementById('lightbox-title');
+  const lightboxInfo = document.getElementById('lightbox-info');
+
+  // 获取当前语言
+  function getCurrentLang() {
+    return localStorage.getItem('preferredLang') || 'zh';
+  }
+
+  // 渲染照片网格
+  function renderPhotos(filter = 'all') {
+    photoGrid.innerHTML = '';
+    const currentLang = getCurrentLang();
+    
+    photos.forEach((photo, index) => {
+      if (filter === 'all' || photo.category === filter) {
+        const photoItem = document.createElement('div');
+        photoItem.className = 'photo-item show';
+        photoItem.setAttribute('data-category', photo.category);
+        photoItem.setAttribute('data-index', index);
+        
+        photoItem.innerHTML = `
+          <img src="${photo.src}" alt="${photo.title[currentLang]}" onerror="this.src='images/myself.jpg'">
+          <div class="photo-overlay">
+            <h3>${photo.title[currentLang]}</h3>
+            <p>${photo.location[currentLang]} · ${photo.date}</p>
+          </div>
+        `;
+        
+        photoItem.addEventListener('click', function() {
+          openLightbox(index);
+        });
+        
+        photoGrid.appendChild(photoItem);
+      }
+    });
+  }
+
+  // 筛选功能
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      const filter = this.getAttribute('data-filter');
+      renderPhotos(filter);
+    });
+  });
+
+  // 打开灯箱
+  function openLightbox(index) {
+    currentPhotoIndex = index;
+    updateLightbox();
+    lightbox.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+
+  // 关闭灯箱
+  function closeLightbox() {
+    lightbox.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+
+  // 更新灯箱内容
+  function updateLightbox() {
+    const photo = photos[currentPhotoIndex];
+    const currentLang = getCurrentLang();
+    
+    lightboxImg.src = photo.src;
+    lightboxImg.alt = photo.title[currentLang];
+    lightboxTitle.textContent = photo.title[currentLang];
+    lightboxInfo.textContent = `${photo.location[currentLang]} · ${photo.date}`;
+  }
+
+  // 上一张
+  function prevPhoto() {
+    currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+    updateLightbox();
+  }
+
+  // 下一张
+  function nextPhoto() {
+    currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+    updateLightbox();
+  }
+
+  // 灯箱事件监听
+  document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+  document.querySelector('.lightbox-prev').addEventListener('click', prevPhoto);
+  document.querySelector('.lightbox-next').addEventListener('click', nextPhoto);
+
+  // 点击背景关闭灯箱
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  // 键盘导航
+  document.addEventListener('keydown', function(e) {
+    if (lightbox.style.display === 'block') {
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') prevPhoto();
+      if (e.key === 'ArrowRight') nextPhoto();
+    }
+  });
+
+  // 初始化渲染
+  renderPhotos();
+
+  // 监听语言切换，更新照片信息
+  const originalLangToggle = document.getElementById('lang-toggle');
+  if (originalLangToggle) {
+    originalLangToggle.addEventListener('click', function() {
+      setTimeout(() => {
+        const activeFilter = document.querySelector('.filter-btn.active');
+        const filter = activeFilter ? activeFilter.getAttribute('data-filter') : 'all';
+        renderPhotos(filter);
+        if (lightbox.style.display === 'block') {
+          updateLightbox();
+        }
+      }, 100);
+    });
+  }
+});
+</script>
+</body>
+
+<!--
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60071442-1', 'auto');
+  ga('send', 'pageview');
+</script>
+-->
+
+<!--<script src="custom-pub.js"></script>-->
+</html>
